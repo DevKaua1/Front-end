@@ -136,6 +136,9 @@ h2 {
 .opcao-item span {
     display: block;
 }
+.opcao-item span {
+    display: block;
+}
 
 .opcao-item:hover {
     background-color: #a01313;
