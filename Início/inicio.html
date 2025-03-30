@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Inicial - Totem de Autoatendimento</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo da empresa -->
+        <img src="/imagens/logo.png" alt="Logo" class="logo">
+        
+        <!-- Botão para começar -->
+        <button id="startBtn" class="start-btn">Clique aqui para começar</button>
+    </div>
+
+    <!-- O pop-up -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopupBtn" class="close-btn">&times;</span>
+            <img src="/imagens/logo.png" alt="Logo" class="popup-logo"> <!-- Logo no pop-up -->
+            <h2>Escolha sua opção:</h2>
+<br>
+            <div class="popup-buttons">
+                <!-- Botões do pop-up com imagens -->
+                <button class="popup-btn" id="eatHereBtn">
+                    <a href="/Lanches/lanches.html">
+                        <img src="/imagens/comeraqui.png" alt="Para comer aqui">
+                        <span>Para comer aqui</span>
+                    </a>
+                </button>
+                <button class="popup-btn" id="takeAwayBtn">
+                    <a href="/Lanches/lanches.html">
+                    <img src="/imagens/levar.png" alt="Para levar">
+                    <span>Para levar</span>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="inicio.js"></script>
+</body>
+</html>

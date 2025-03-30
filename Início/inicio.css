@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-image: url("/Front-end/imagens/fundo2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+.start-btn {
+    font-size: 24px;
+    padding: 15px 30px;
+    background-color: #ff2600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    width: 170%;
+    height: 100px;
+    z-index: 2;
+}
+
+.start-btn:hover {
+    background-color: #a01313;
+    transform: scale(1.1);
+}
+
+.start-btn:active {
+    transform: scale(0.95);
+}
+
+/* Pop-up */
+.popup {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 500px; /* Aumentado a largura do pop-up */
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    font-size: 35px;
+    font-weight: bold;
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: black;
+}
+
+.popup-logo {
+    width: 180px;
+    margin-bottom: 30px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 35px; /* Aumentado o espaçamento entre os botões */
+}
+
+.popup-btn {
+    background-color: #ff2600;
+    color: white;
+    border: none;
+    padding: 30px 50px; /* Aumentado o padding para alargar os botões */
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    width: 180px; /* Aumentado a largura dos botões */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px; /* Aumentado o tamanho da fonte */
+}
+
+.popup-btn img {
+    width: 70px; /* Aumentado */
+    height: 70px; /* Aumentado */
+    margin-bottom: 20px; /* Aumentado o espaço entre a imagem e o texto */
+}
+
+.popup-btn:hover {
+    background-color: #a01313;
+}
+
+.popup-btn:active {
+    transform: scale(0.95);
+}
+
+/* Media Query para telas pequenas (celulares) */
+@media (max-width: 600px) {
+    body {
+        height: 100vh;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .start-btn {
+        font-size: 20px;
+        padding: 10px 20px;
+        height: 60px;
+    }
+
+    .popup-content {
+        width: 90%; /* Ajustado para 90% da largura da tela em celulares */
+        padding: 30px;
+    }
+
+    .popup-btn {
+        width: 150px; /* Botões mais largos em celulares */
+        padding: 25px 45px; /* Aumentado o padding nos botões */
+        font-size: 24px; /* Tamanho maior para celular */
+    }
+
+    .popup-btn img {
+        width: 60px;
+        height: 60px;
+    }
+}

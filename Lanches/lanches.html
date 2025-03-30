@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escolha o Seu Pedido - Totem de Autoatendimento</title>
+    <link rel="stylesheet" href="lanches.css" />
+</head>
+
+<body>
+    <!-- Botão de menu para telas pequenas -->
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <h2>MENU</h2>
+        <button id="lanchesBtn">
+            <img src="/imagens/hamburguer-removebg-preview.png" alt="Imagem de um hambúrguer" class="imgside" />
+            <p>Lanches</p>
+        </button>
+        <button id="acompanhamentosBtn">
+            <img src="/imagens/Fritas.png" alt="Imagem de batatas fritas" class="imgside" />
+            <p>Acompanhamentos</p>
+        </button>
+        <button id="bebidasBtn">
+            <img src="/imagens/coca.png" alt="Imagem de um refrigerante" class="imgside" />
+            <p>Bebidas</p>
+        </button>
+        <button id="sobremesasBtn">
+            <img src="/imagens/pudim.png" alt="Imagem de um pudim" class="imgside" />
+            <p>Sobremesas</p>
+        </button>
+        <button id="combosBtn">
+            <img src="/imagens/combo1.png" alt="Imagem de um combo" class="imgside" />
+            <p>Combos</p>
+        </button>
+        <button id="maisVendidosBtn">
+            <img src="/imagens/maisVendidos.png" alt="Imagem de itens mais vendidos" class="imgside" />
+            <p>Mais Vendidos</p>
+        </button>
+    </div>
+    
+    <!-- Conteúdo Principal -->
+    <div class="content">
+        <h1>Escolha o Seu Pedido</h1>
+        
+        <!-- Seção de Mais Vendidos -->
+        <section class="selecao" id="maisVendidos">
+            <h2>Mais Vendidos</h2>
+            <div class="opcoes" id="maisVendidosOpcoes">
+                <!-- Itens mais vendidos serão dinamicamente adicionados aqui -->
+            </div>
+        </section>
+
+        <!-- Seção de Lanches -->
+        <section class="selecao" id="lanches">
+            <h2>Lanches</h2>
+            <div class="opcoes">
+                <button class="opcao-item" data-nome="Hambúrguer" data-preco="15.00">
+                    <img src="/imagens/hamburguer-removebg-preview.png" alt="Imagem de um hambúrguer simples"
+                        class="imglanches" />
+                    <p class="item-p">Hambúrguer</p>
+                    <p class="item-p">R$ 15,00</p>
+                </button>
+                <button class="opcao-item" data-nome="Cheeseburger" data-preco="18.00">
+                    <img src="/imagens/cheeseburguer.png" alt="Imagem de um cheeseburger" />
+                    <p class="item-p">Cheeseburger</p>
+                    <p class="item-p">R$ 18,00</p>
+                </button>
+                <button class="opcao-item" data-nome="X-Bacon" data-preco="20.00">
+                    <img src="/imagens/X-Bacon.png" alt="Imagem de um X-Bacon" />
+                    <p>X-Bacon</p>
+                    <p>R$ 20,00</p>
+                </button>
+                <button class="opcao-item" data-nome="X-Frango" data-preco="17.00">
+                    <img src="/imagens/X-Frango.png" alt="Imagem de um X-Frango" />
+                    <p class="item-p">X-Frango</p>
+                    <p class="item-p">R$ 17,00</p>
+                </button>
+                <button class="opcao-item" data-nome="Vegetariano" data-preco="22.00">
+                    <img src="/imagens/Vegetariano.png" alt="Imagem de um lanche vegetariano" />
+                    <p class="item-p">Vegetariano</p>
+                    <p class="item-p">R$ 22,00</p>
+                </button>
+            </div>
+        </section>
+
+        <!-- Seção de Acompanhamentos -->
+        <section class="selecao" id="acompanhamentos">
+            <h2>Acompanhamentos</h2>
+            <div class="opcoes">
+                <button class="opcao-item" data-nome="Fritas" data-preco="8.00">
+                    <img src="/imagens/Fritas.png" alt="Imagem de batatas fritas" />
+                    <p>Fritas</p>
+                    <p>R$ 8,00</p>
+                </button>
+                <button class="opcao-item" data-nome="Onion Rings" data-preco="10.00">
+                    <img src="/imagens/onionRings.png" alt="Imagem de anéis de cebola" />
+                    <p class="item-p">Onion Rings</p>
+                    <p class="item-p">R$ 10,00</p>
+                </button>
+                <button class="opcao-item" data-nome="Salada" data-preco="6.00">
+                    <img src="/imagens/salada.png" alt="Imagem de uma salada" />
+                    <p>Salada</p>
+                    <p>R$ 6,00</p>
+                </button>
+            </div>
+        </section>
+
+        <!-- Seção de Bebidas -->
+        <section class="selecao" id="bebidas">
+            <h2>Bebidas</h2>
+            <div class="opcoes">
+                <button class="opcao-item" data-nome="Refrigerante" data-preco="5.00">
+                    <img src="/imagens/coca.png" alt="Imagem de um refrigerante" />
+                    <p class="item-p">Refrigerante</p>
+                    <p class="item-p">R$ 5,00</p>
+                </button>
+                <button class="opcao-item" data-nome="Suco" data-preco="6.00">
+                    <img src="/imagens/suco.png" alt="Imagem de um suco" />
+                    <p class="item-p">Suco</p>
+                    <p class="item-p">R$ 6,00</p>
+                </button>
+                <button class="opcao-item" data-nome="Água" data-preco="3.00">
+                    <img src="/imagens/agua.png" alt="Imagem de uma garrafa de água" />
+                    <p class="item-p">Água</p>
+                    <p class="item-p">R$ 3,00</p>
+                </button>
+            </div>
+        </section>
+
+        <!-- Seção de Sobremesas -->
+        <section class="selecao" id="sobremesas">
+            <h2>Sobremesas</h2>
+            <div class="opcoes">
+                <button class="opcao-item" data-nome="Pudim" data-preco="7.00">
+                    <img src="/imagens/pudim.png" alt="Imagem de um pudim" />
+                    <p class="item-p">Pudim</p>
+                    <p class="item-p">R$ 7,00</p>
+                </button>
+                <button class="opcao-item" data-nome="Sorvete" data-preco="8.00">
+                    <img style="width: 92px; margin-bottom: 6px" src="/imagens/sorvete.png"
+                        alt="Imagem de um sorvete" />
+                    <p class="item-p">Sorvete</p>
+                    <p class="item-p">R$ 8,00</p>
+                </button>
+                <button class="opcao-item" data-nome="Brownie" data-preco="9.00">
+                    <img src="/imagens/brownie.png" alt="Imagem de um brownie" />
+                    <p class="item-p">Brownie</p>
+                    <p class="item-p">R$ 9,00</p>
+                </button>
+            </div>
+        </section>
+
+        <!-- Seção de Combos -->
+        <section class="selecao" id="combos">
+            <h2>Combos</h2>
+            <div class="opcoes">
+                <button class="opcao-item" data-nome="Combo 1" data-preco="25.00">
+                    <img style="width: 181px; padding-bottom: 28px" src="/imagens/combo1.png" alt="Imagem do Combo 1" />
+                    <p class="item-p">Combo 1</p>
+                    <p class="item-p">R$ 25,00</p>
+                </button>
+                <button class="opcao-item" data-nome="Combo 2" data-preco="30.00">
+                    <img src="/imagens/combo2.png" alt="Imagem do Combo 2" />
+                    <p class="item-p">Combo 2</p>
+                    <p class="item-p">R$ 30,00</p>
+                </button>
+                <button class="opcao-item" data-nome="Combo 3" data-preco="35.00">
+                    <img src="/imagens/combo3.png" alt="Imagem do Combo 3" />
+                    <p class="item-p">Combo 3</p>
+                    <p class="item-p">R$ 35,00</p>
+                </button>
+            </div>
+        </section>
+
+        <!-- Área para mostrar o pedido do usuário -->
+        <section id="pedido">
+            <h2>Seu Pedido</h2>
+            <ul id="pedidoLista"></ul>
+            <p id="total">Total: R$ 0,00</p>
+        </section>
+
+        <!-- Botão para finalizar o pagamento -->
+        <button id="finalizarPedidoBtn">Finalizar Pagamento</button>
+        <div id="erroMensagem"></div>
+    </div>
+
+    <script src="lanches.js"></script>
+</body>
+
+</html>
